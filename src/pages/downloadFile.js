@@ -1,8 +1,6 @@
 export default function Download(){
+    const uuid = location.hash.slice(11);
 
-    const fileId = location.hash.slice(11)
-
-    return `
-        <h1>${fileId}</h1>
-    `
-};
+    window.location.href = `http://localhost:8081/download?uuid=${uuid}`;
+    location.hash = '/'
+}

@@ -1,0 +1,26 @@
+.app {
+    font-size: 24px;
+font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+input {
+    margin: 10px;
+    font-size: 24px;
+}
+
+.menu-button {
+    width: 240px;
+    height: 240px;
+    font-size: 20px;
+}

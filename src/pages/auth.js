@@ -20,7 +20,8 @@ export default function Auth() {
             if (response.status === 200){
                 localStorage.setItem("login", login);
                 localStorage.setItem("passwordHash", passwordHash);
-                localStorage.setItem("userId", response.json().id);
+                var user = await response.json();
+                localStorage.setItem("userId", user.id);
                 location.hash = '#/menu';
             }else if (response.status === 401){
                 document.getElementById("error").innerText = "Неправильный логин или пароль";

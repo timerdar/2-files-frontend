@@ -8,7 +8,6 @@ import UserStat from "./pages/userFilesStat.js";
 const routes = {
     '/': Auth,
     '/menu': Menu,
-    '/download': Download,
     '/upload-file': Upload,
     '/sign-up': SignUp,
     '/stat': UserStat
