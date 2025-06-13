@@ -24,3 +24,7 @@ input {
     height: 240px;
     font-size: 20px;
 }
+
+.error {
+    color: red;
+}
